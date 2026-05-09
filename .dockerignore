@@ -1,0 +1,14 @@
+.git
+.github
+.githooks
+.idea
+.vscode
+node_modules
+target
+src/main/webapp/WEB-INF/classes
+charts
+docker
+docker-compose.yml
+.examples
+.docs
+*.log

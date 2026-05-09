@@ -1,0 +1,4 @@
+[0.1.0]
+* Initial Cloudron packaging of Urlaubsverwaltung
+* PostgreSQL, Sendmail and OIDC addons wired up
+* Logs and backups persisted under /app/data

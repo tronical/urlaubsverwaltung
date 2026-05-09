@@ -1,0 +1,35 @@
+{
+    "id": "org.synyx.urlaubsverwaltung.cloudronapp",
+    "title": "Urlaubsverwaltung",
+    "author": "Urlaubsverwaltung Contributors",
+    "description": "file://cloudron/DESCRIPTION.md",
+    "changelog": "file://cloudron/CHANGELOG",
+    "tagline": "Web-based vacation and absence management for teams.",
+    "version": "0.1.0",
+    "upstreamVersion": "6.0.0-M3",
+    "healthCheckPath": "/actuator/health/readiness",
+    "httpPort": 8080,
+    "memoryLimit": 1610612736,
+    "manifestVersion": 2,
+    "website": "https://urlaubsverwaltung.cloud",
+    "documentationUrl": "https://github.com/urlaubsverwaltung/urlaubsverwaltung/blob/main/README.md",
+    "contactEmail": "info@urlaubsverwaltung.cloud",
+    "tags": [
+        "hr",
+        "vacation",
+        "leave",
+        "absence",
+        "team"
+    ],
+    "minBoxVersion": "7.0.0",
+    "addons": {
+        "localstorage": {},
+        "postgresql": {},
+        "sendmail": {
+            "supportsDisplayName": true
+        },
+        "oidc": {
+            "loginRedirectUri": "/login/oauth2/code/default"
+        }
+    }
+}
