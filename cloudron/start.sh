@@ -32,6 +32,9 @@ export UV_MAIL_REPLYTO="${CLOUDRON_MAIL_FROM}"
 export UV_MAIL_REPLYTODISPLAYNAME="${CLOUDRON_MAIL_FROM_DISPLAY_NAME:-Urlaubsverwaltung}"
 export UV_MAIL_APPLICATIONURL="${CLOUDRON_APP_ORIGIN}"
 
+# iCal calendar organizer (required, must be a valid email).
+export UV_CALENDAR_ORGANIZER="${CLOUDRON_MAIL_FROM}"
+
 # ---------------------------------------------------------------------------
 # OIDC (Cloudron oidc addon)
 # Cloudron exposes CLOUDRON_OIDC_ISSUER as the issuer URI; Spring Boot will
