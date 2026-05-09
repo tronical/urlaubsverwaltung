@@ -56,6 +56,11 @@ export UV_BACKUP_BACKUP_CONFIGURATION_FILESYSTEM_BACKUPPATH="/app/data/backups/"
 export LOGGING_FILE_NAME="/app/data/logs/urlaubsverwaltung.log"
 export SERVER_PORT=8080
 
+# Honor X-Forwarded-* headers from Cloudron's reverse proxy so that Spring
+# constructs absolute URLs (incl. the OAuth2 redirect URI) using the public
+# https://<location> origin instead of the internal container address.
+export SERVER_FORWARD_HEADERS_STRATEGY=framework
+
 # Tune JVM for Cloudron's container memory limit (declared in manifest).
 export JAVA_TOOL_OPTIONS="${JAVA_TOOL_OPTIONS:-} -XX:MaxRAMPercentage=70 -XX:+ExitOnOutOfMemoryError"
 
